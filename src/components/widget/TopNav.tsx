@@ -55,7 +55,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       backdropFilter={!navTrigger ? "blur(5px)" : ""}
       {...props}
     >
-      <Container>
+      <Container pl={[2, null, "32px !important"]}>
         <HStack
           justify={"space-between"}
           py={2}
