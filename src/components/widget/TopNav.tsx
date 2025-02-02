@@ -1,20 +1,16 @@
 import CtaButton from "@/components/widget/CtaButton";
-import navs from "@/constant/navs";
 import useNavs from "@/context/useNavs";
-import { useLang } from "@/hooks/useLang";
-import useScreen from "@/hooks/useScreen";
-import { Box, BoxProps, Button, HStack } from "@chakra-ui/react";
+import { Box, BoxProps, HStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Container from "../ui-custom/Container";
-import NavDrawer from "../../pages/section/NavDrawer";
+import LangSwitcher from "../ui-custom/LangSwitcher";
+import { ColorModeButton } from "../ui/color-mode";
 
 type Props = {
   activeNavIndex?: number;
 } & BoxProps;
 const TopNav = ({ activeNavIndex, ...props }: Props) => {
-  const { sw } = useScreen();
-  const { lang } = useLang();
   const { pathname } = useLocation();
 
   const [scrollYPos, setScrollYPos] = useState<number>(window.scrollY);
@@ -68,13 +64,28 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           transition={"200ms"}
         >
           <HStack flexShrink={0} w={"100px"}>
-            <NavDrawer
+            {/* <NavDrawer
               activeNavIndex={activeNavIndex}
               aria-label="Drawer Navs"
               color={!navTrigger ? "white" : "current"}
-            />
-          </HStack>
+            /> */}
+            <HStack mx={"auto"}>
+              <ColorModeButton
+                color={!navTrigger ? "white" : "ibody"}
+                borderRadius={"full"}
+                className={"btn"}
+                size={"lg"}
+              />
 
+              <LangSwitcher
+                color={!navTrigger ? "white" : "ibody"}
+                borderRadius={"full"}
+                size={"lg"}
+                fontSize={"1rem !important"}
+              />
+            </HStack>
+          </HStack>
+          {/* 
           {sw > 900 ? (
             <HStack gap={5}>
               {navs?.map((nav, i) => {
@@ -102,7 +113,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
             </HStack>
           ) : (
             ""
-          )}
+          )} */}
 
           <HStack flexShrink={0} w={[null, null, "100px"]} justify={"flex-end"}>
             <CtaButton />

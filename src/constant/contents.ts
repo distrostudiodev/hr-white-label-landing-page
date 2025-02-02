@@ -29,6 +29,22 @@ const contents = {
         id: "Optimalkan Pengelolaan SDM dengan Teknologi Modern.",
         en: "Optimize HR Management with Modern Technology.",
       },
+      sellingPoints: {
+        list: [
+          {
+            id: "Hilangkan Pekerjaan HR yang Berulang",
+            en: "Eliminate Repetitive HR Tasks",
+          },
+          {
+            id: "Proses Payroll Lebih Cepat & Akurat",
+            en: "Faster & More Accurate Payroll Processing",
+          },
+          {
+            id: "Pantau Kinerja & Kehadiran dalam Satu Dashboard",
+            en: "Monitor Performance & Attendance in One Dashboard",
+          },
+        ],
+      },
       cta: {
         id: "Coba Gratis",
         en: "Try It Free",

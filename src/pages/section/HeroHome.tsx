@@ -10,10 +10,10 @@ import { IMAGES_PATH } from "@/constant/path";
 import { responsiveSpacing2 } from "@/constant/sizes";
 import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
-import { HStack, Icon, Image, Stack } from "@chakra-ui/react";
+import { HStack, Icon, Image, Stack, Text } from "@chakra-ui/react";
 import Container from "../../components/ui-custom/Container";
 import useScreen from "@/hooks/useScreen";
-import { IconArrowUpRight } from "@tabler/icons-react";
+import { IconArrowUpRight, IconCheck } from "@tabler/icons-react";
 
 const Hero = () => {
   const { lang } = useLang();
@@ -52,12 +52,25 @@ const Hero = () => {
                   HRMS by {BRAND_NAME}
                 </Heading5>
               </HStack>
-              <Heading1 fontWeight={"bold"} mb={4}>
+              <Heading1 fontWeight={"bold"} mb={8}>
                 {content.title[lang]}
               </Heading1>
-              <Heading5 fontWeight={"medium"} mb={8}>
+              {/* <Heading5 fontWeight={"medium"} mb={8}>
                 {content.subTitle[lang]}
-              </Heading5>
+              </Heading5> */}
+
+              <CContainer mb={12} gap={2}>
+                {content.sellingPoints.list.map((item, i) => {
+                  return (
+                    <HStack key={i}>
+                      <Icon color={"green.500"}>
+                        <IconCheck />
+                      </Icon>
+                      <Text>{item[lang]}</Text>
+                    </HStack>
+                  );
+                })}
+              </CContainer>
 
               <BButton
                 px={"40px"}
