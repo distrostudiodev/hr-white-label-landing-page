@@ -99,7 +99,7 @@ const CtaIndependentDisclosure = () => {
           <BackButton />
 
           <Link to={contents.contact.wa} target="_blank">
-            <BButton size={MAIN_BUTTON_SIZE} colorPalette={"p"}>
+            <BButton w={"full"} size={MAIN_BUTTON_SIZE} colorPalette={"p"}>
               <Icon>
                 <IconBrandWhatsapp />
               </Icon>
