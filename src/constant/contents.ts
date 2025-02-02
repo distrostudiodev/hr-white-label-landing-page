@@ -303,7 +303,7 @@ const contents = {
     ],
   },
   contact: {
-    address: "Jl. Tampomas Dalam Raya No. 12, Semarang",
+    address: "Remotely, based on Semarang, Central Java, Indonesia",
     email: "contact@exium.com",
     phone: "+62 857-2621-8466",
   },
@@ -350,6 +350,12 @@ const contents = {
       id: "Navigasi",
       en: "Navigation",
     },
+    footerNavs: [
+      {
+        label: BRAND_NAME,
+        link: "https://distrostudio.com",
+      },
+    ],
     contactLabel: {
       id: "Kontak",
       en: "Contant",
