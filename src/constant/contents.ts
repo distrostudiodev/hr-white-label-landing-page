@@ -22,13 +22,17 @@ const contents = {
   tagline: "visionary engineering",
   home: {
     hero: {
-      intro: {
-        id: "Kami adalah ahli rekayasa visioner yang merancang solusi inovatif untuk tantangan modern, menciptakan pengalaman efisien dan berdampak jangka panjang.",
-        en: "We are visionary engineers who design innovative solutions to modern challenges, creating efficient and impactful experiences that last.",
+      title: {
+        id: "Solusi Manajemen SDM yang Efektif dan Efisien",
+        en: "Effective and Efficient HR Management Solution",
+      },
+      subTitle: {
+        id: "Optimalkan Pengelolaan SDM dengan Teknologi Modern.",
+        en: "Optimize HR Management with Modern Technology.",
       },
       cta: {
-        id: "Mari diskusi",
-        en: "Let's talk",
+        id: "Coba Gratis!",
+        en: "Try It Free!",
       },
       ctaDescription: {
         id: "Diskusi dengan tim kami",
