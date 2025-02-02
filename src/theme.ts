@@ -16,7 +16,7 @@ const customConfig = defineConfig({
           300: { value: "#8ec4ff" },
           400: { value: "#64abff" },
           500: { value: "#3a90ff" },
-          "500a": { value: "#3a90ff80" },
+          "500a": { value: "#3a90ff20" },
           600: { value: "#2c70db" },
           700: { value: "#2152b7" },
           800: { value: "#183993" },

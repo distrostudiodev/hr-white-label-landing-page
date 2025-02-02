@@ -47,13 +47,16 @@ const FeaturesHome = () => {
                     key={i}
                     unclicky
                     justifyContent={"start"}
-                    variant={active ? "outline" : "ghost"}
-                    colorPalette={active ? "p" : ""}
+                    variant={"ghost"}
                     onClick={() => {
                       setActiveIndex(i);
                     }}
                     size={"xl"}
                     fontSize={"md !important"}
+                    color={active ? "p.500" : "fg.muted"}
+                    bg={active ? "p.500a" : ""}
+                    border={"1px solid"}
+                    borderColor={active ? "p.500" : "transparent"}
                   >
                     <Icon>
                       <item.icon />
