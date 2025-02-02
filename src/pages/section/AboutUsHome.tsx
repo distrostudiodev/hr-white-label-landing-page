@@ -9,11 +9,11 @@ const AboutUsHome = () => {
   const content = contents.home.aboutUs;
 
   return (
-    <CContainer py={20}>
+    <CContainer py={32}>
       <Container>
         <Text
           textAlign={"center"}
-          fontSize={"1.2rem"}
+          fontSize={"1.1rem"}
           maxW={"600px"}
           mx={"auto"}
           lineHeight={"tall"}
