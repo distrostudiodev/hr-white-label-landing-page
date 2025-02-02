@@ -61,8 +61,6 @@ const WAWidget = () => {
     }
   };
 
-  console.log(yBefore, position.y);
-
   return (
     <HStack
       position="fixed"
@@ -72,6 +70,7 @@ const WAWidget = () => {
       cursor="grab"
       onMouseDown={handleDragStart}
       onTouchStart={handleDragStart}
+      zIndex={99}
     >
       <Box
         bg="body"
