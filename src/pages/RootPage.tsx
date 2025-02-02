@@ -5,6 +5,7 @@ import AboutUsHome from "./section/AboutUsHome";
 import Benefits from "./section/Benefits";
 import FeaturesHome from "./section/FeaturesHome";
 import Footer from "./section/Footer";
+import WAWidget from "@/components/widget/WAWidget";
 
 const RootPage = () => {
   useScrollToTop();
@@ -16,6 +17,8 @@ const RootPage = () => {
       <FeaturesHome />
       <Benefits />
       <Footer />
+
+      <WAWidget />
     </CContainer>
   );
 };

@@ -73,7 +73,7 @@ const contents = {
       },
       list: [
         {
-          img: `${IMAGES_PATH}/hero.jpg`,
+          img: `${IMAGES_PATH}/features/presensi.png`,
           icon: IconClock,
           label: {
             id: "Manajemen Absensi Otomatis",
@@ -85,7 +85,7 @@ const contents = {
           },
         },
         {
-          img: `${IMAGES_PATH}/hero.jpg`,
+          img: `${IMAGES_PATH}/features/penggajian.png`,
           icon: IconCoins,
           label: {
             id: "Penggajian Otomatis",
@@ -97,7 +97,7 @@ const contents = {
           },
         },
         {
-          img: `${IMAGES_PATH}/hero.jpg`,
+          img: `${IMAGES_PATH}/features/cuti.png`,
           icon: IconCalendar,
           label: {
             id: "Manajemen Cuti & Lembur",
@@ -109,7 +109,7 @@ const contents = {
           },
         },
         {
-          img: `${IMAGES_PATH}/hero.jpg`,
+          img: `${IMAGES_PATH}/features/penilaian.png`,
           icon: IconReport,
           label: {
             id: "Evaluasi Kinerja",
@@ -121,7 +121,7 @@ const contents = {
           },
         },
         {
-          img: `${IMAGES_PATH}/hero.jpg`,
+          img: `${IMAGES_PATH}/features/karyawan.png`,
           icon: IconDatabase,
           label: {
             id: "Database Karyawan Terpusat",
@@ -133,7 +133,7 @@ const contents = {
           },
         },
         {
-          img: `${IMAGES_PATH}/hero.jpg`,
+          img: `${IMAGES_PATH}/features/dashboard.png`,
           icon: IconChartLine,
           label: {
             id: "Laporan & Analitik",
@@ -206,19 +206,19 @@ const contents = {
       list: [
         {
           name: "Rumah Sakit Kasih Ibu Surakarta",
-          img: `${IMAGES_PATH}/clients/images.jpg`,
+          img: `${IMAGES_PATH}/clients/rski.png`,
         },
         {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          img: `${IMAGES_PATH}/clients/images.jpg`,
+          name: "PT Yohana Sentosa Pratama",
+          img: `${IMAGES_PATH}/clients/yohana.png`,
         },
         {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          img: `${IMAGES_PATH}/clients/images.jpg`,
+          name: "Khalifah One",
+          img: `${IMAGES_PATH}/clients/khalifah.png`,
         },
         {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          img: `${IMAGES_PATH}/clients/images.jpg`,
+          name: "Kawan Mina",
+          img: `${IMAGES_PATH}/clients/kawan.png`,
         },
       ],
     },
@@ -334,7 +334,8 @@ const contents = {
   contact: {
     address: "Remotely, based on Semarang, Central Java, Indonesia",
     email: "contact@exium.com",
-    phone: "+62 857-2621-8466",
+    phone: "+6282352222001",
+    wa: "https://wa.me/6282352222001?text=Halo%2C%20saya%20tertarik%20untuk%20mendiskusikan%20lebih%20lanjut%20mengenai%20aplikasi%20HR%20yang%20Anda%20tawarkan.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20detail%20atau%20jadwal%20untuk%20berdiskusi%20lebih%20lanjut%3F%20Terima%20kasih%21",
   },
   sosmeds: {
     label: { id: "Sosial Media", en: "Social Links" },
@@ -343,8 +344,8 @@ const contents = {
         name: "Whatsappp",
         icon: WhatsappLogo,
         number: "+6285726218466",
-        link: "https://wa.me/+6285726218466",
-        disabled: true,
+        link: "https://wa.me/6282352222001?text=Halo%2C%20saya%20tertarik%20untuk%20mendiskusikan%20lebih%20lanjut%20mengenai%20aplikasi%20HR%20yang%20Anda%20tawarkan.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20detail%20atau%20jadwal%20untuk%20berdiskusi%20lebih%20lanjut%3F%20Terima%20kasih%21",
+        disabled: false,
       },
       {
         name: "Instagram",

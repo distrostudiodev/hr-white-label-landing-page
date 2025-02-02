@@ -19,7 +19,7 @@ const Clients = () => {
       <SimpleGrid columns={[2, null, 4]} gap={4}>
         {content.list.map((item, i) => {
           return (
-            <Center key={i}>
+            <Center key={i} bg={"white"} borderRadius={8}>
               <Image alt={item.name} src={item.img} />
             </Center>
           );
