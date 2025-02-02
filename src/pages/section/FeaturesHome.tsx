@@ -52,6 +52,7 @@ const FeaturesHome = () => {
                       setActiveIndex(i);
                     }}
                     size={"xl"}
+                    fontSize={"md !important"}
                   >
                     <Icon>
                       <item.icon />
