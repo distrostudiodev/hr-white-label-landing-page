@@ -16,7 +16,7 @@ const Clients = () => {
         {content.intro[lang]}
       </Text>
 
-      <SimpleGrid columns={[2, null, 4]}>
+      <SimpleGrid columns={[2, null, 4]} gap={4}>
         {content.list.map((item, i) => {
           return (
             <Center key={i}>
