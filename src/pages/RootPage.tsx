@@ -5,6 +5,7 @@ import AboutUsHome from "./section/AboutUsHome";
 import Footer from "./section/Footer";
 import FeaturesHome from "./section/FeaturesHome";
 import LastCta from "./section/LastCta";
+import Clients from "./section/Clients";
 
 const RootPage = () => {
   useScrollToTop();
@@ -14,6 +15,7 @@ const RootPage = () => {
       <HeroHome />
       <AboutUsHome />
       <FeaturesHome />
+      <Clients />
       <LastCta />
       <Footer />
     </CContainer>
