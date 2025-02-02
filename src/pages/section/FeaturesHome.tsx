@@ -13,6 +13,7 @@ import {
   AccordionItemTrigger,
   AccordionRoot,
 } from "@/components/ui/accordion";
+import CtaButton from "@/components/widget/CtaButton";
 
 const FeaturesHome = () => {
   const { lang } = useLang();
@@ -93,6 +94,8 @@ const FeaturesHome = () => {
             </AccordionRoot>
           </CContainer>
         )}
+
+        <CtaButton w={"fit"} mx={"auto"} mt={12} />
       </Container>
     </CContainer>
   );
