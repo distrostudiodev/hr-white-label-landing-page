@@ -2,7 +2,7 @@ import { withNavRoutes } from "@/constant/routes";
 import MaintenancePage from "@/pages/error/MaintenancePage";
 import MissingPage from "@/pages/error/MissingPage";
 import ServerErrorPage from "@/pages/error/ServerErrorPage";
-import PageContainer from "@/pages/section/PageContainer";
+import PageContainer from "@/components/ui-custom/PageContainer";
 import { Route, Routes } from "react-router-dom";
 
 const Routing = () => {

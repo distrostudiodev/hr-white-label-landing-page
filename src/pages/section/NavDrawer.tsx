@@ -21,7 +21,7 @@ import { Link, useNavigate } from "react-router-dom";
 import navs from "../../constant/navs";
 import useBackOnClose from "../../hooks/useBackOnClose";
 import { useLang } from "../../hooks/useLang";
-import Container from "./Container";
+import Container from "../../components/ui-custom/Container";
 import { SVGS_PATH } from "@/constant/path";
 
 interface Props extends IconButtonProps {
@@ -128,8 +128,6 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                 }}
                 transition={"200ms"}
                 _hover={{ color: "p.500" }}
-                borderBottom={"2px solid"}
-                borderColor={activeNavIndex === i ? "p.500" : "transparent"}
               >
                 {nav.label[lang]}
               </Heading2>

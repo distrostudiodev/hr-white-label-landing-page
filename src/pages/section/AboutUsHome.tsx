@@ -2,7 +2,7 @@ import CContainer from "@/components/ui-custom/CContainer";
 import contents from "@/constant/contents";
 import { useLang } from "@/hooks/useLang";
 import { Text } from "@chakra-ui/react";
-import Container from "./Container";
+import Container from "../../components/ui-custom/Container";
 
 const AboutUsHome = () => {
   const { lang } = useLang();

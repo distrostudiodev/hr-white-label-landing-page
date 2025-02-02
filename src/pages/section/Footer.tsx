@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
-import Container from "./Container";
+import Container from "../../components/ui-custom/Container";
 import { ColorModeButton } from "@/components/ui/color-mode";
 import LangSwitcher from "@/components/ui-custom/LangSwitcher";
 

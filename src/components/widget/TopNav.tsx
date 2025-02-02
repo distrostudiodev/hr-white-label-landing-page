@@ -6,8 +6,8 @@ import useScreen from "@/hooks/useScreen";
 import { Box, BoxProps, Button, HStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Container from "./Container";
-import NavDrawer from "./NavDrawer";
+import Container from "../ui-custom/Container";
+import NavDrawer from "../../pages/section/NavDrawer";
 
 type Props = {
   activeNavIndex?: number;
@@ -86,10 +86,6 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                       borderRadius={0}
                       h={"32px !important"}
                       border={"none"}
-                      borderBottom={"2px solid"}
-                      borderColor={
-                        activeNavIndex === i ? "p.500" : "transparent"
-                      }
                       _hover={{
                         color: "p.500",
                       }}

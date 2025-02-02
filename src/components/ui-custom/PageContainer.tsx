@@ -1,6 +1,6 @@
 import CContainer from "@/components/ui-custom/CContainer";
 import { StackProps } from "@chakra-ui/react";
-import TopNav from "./TopNav";
+import TopNav from "../widget/TopNav";
 
 type Props = {
   children?: any;

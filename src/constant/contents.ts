@@ -130,6 +130,16 @@ const contents = {
         },
       ],
     },
+    benefits: {
+      title: {
+        id: "Fitur Unggulan",
+        en: "Featured Features",
+      },
+      subTitle: {
+        id: "Semua fitur HR dalam satu platform efektif.",
+        en: "All HR features in one effective platform.",
+      },
+    },
     clients: {
       title: {
         id: "Fitur Unggulan",

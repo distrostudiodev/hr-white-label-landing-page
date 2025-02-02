@@ -4,7 +4,7 @@ import contents from "@/constant/contents";
 import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
 import { HStack, Icon, Image, Text } from "@chakra-ui/react";
-import Container from "./Container";
+import Container from "../../components/ui-custom/Container";
 import { useState } from "react";
 import BButton from "@/components/ui-custom/BButton";
 import {

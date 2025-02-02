@@ -11,7 +11,7 @@ import { responsiveSpacing2 } from "@/constant/sizes";
 import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
 import { HStack, Icon, Image, Stack } from "@chakra-ui/react";
-import Container from "./Container";
+import Container from "../../components/ui-custom/Container";
 import useScreen from "@/hooks/useScreen";
 import { IconArrowUpRight } from "@tabler/icons-react";
 
