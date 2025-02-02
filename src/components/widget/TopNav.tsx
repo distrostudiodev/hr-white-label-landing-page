@@ -44,7 +44,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
     <Box
       id="topNav"
       w={"100%"}
-      zIndex={99}
+      zIndex={20}
       position={"fixed"}
       // top={`${navTop}px`}
       left={0}

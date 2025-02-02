@@ -97,11 +97,13 @@ const CtaIndependentDisclosure = () => {
 
         <DisclosureFooter>
           <BackButton />
+
+          <Link to={contents.contact.wa} target="_blank"></Link>
           <BButton size={MAIN_BUTTON_SIZE} colorPalette={"p"}>
             <Icon>
               <IconBrandWhatsapp />
             </Icon>
-            Whatsapp Kami
+            Whatsapp
           </BButton>
         </DisclosureFooter>
       </DisclosureContent>
