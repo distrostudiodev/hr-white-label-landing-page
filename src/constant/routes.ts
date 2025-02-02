@@ -12,27 +12,6 @@ const withNavRoutes: Array<PathRouteProps> = [
     path: "/",
     element: createElement(RootPage),
   },
-  {
-    path: "/works",
-    element: createElement(WorksPage),
-  },
-  {
-    path: "/about-us",
-    element: createElement(AboutUsPage),
-  },
-  {
-    path: "/services",
-    element: createElement(ServicesPage),
-  },
-  {
-    path: "/products",
-    element: createElement(ProductsPage),
-  },
-
-  {
-    path: "/work/:index",
-    element: createElement(WorkDetail),
-  },
 ];
 
 const routes: Array<PathRouteProps> = [{}];
