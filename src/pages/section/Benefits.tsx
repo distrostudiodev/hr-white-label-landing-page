@@ -4,8 +4,30 @@ import Heading3 from "@/components/ui-custom/Heading3";
 import CtaButton from "@/components/widget/CtaButton";
 import contents from "@/constant/contents";
 import { useLang } from "@/hooks/useLang";
-import { Circle, SimpleGrid, Text } from "@chakra-ui/react";
+import { Center, Circle, Image, SimpleGrid, Text } from "@chakra-ui/react";
 
+const Clients = () => {
+  const { lang } = useLang();
+  const content = contents.home.clients;
+
+  return (
+    <CContainer>
+      <Text fontSize={"md"} textAlign={"center"} mb={12}>
+        {content.intro[lang]}
+      </Text>
+
+      <SimpleGrid columns={[2, null, 4]}>
+        {content.list.map((item, i) => {
+          return (
+            <Center key={i}>
+              <Image alt={item.name} src={item.img} />
+            </Center>
+          );
+        })}
+      </SimpleGrid>
+    </CContainer>
+  );
+};
 const Benefits = () => {
   const { lang } = useLang();
   const content = contents.home.benefits;
@@ -17,7 +39,7 @@ const Benefits = () => {
           {content.title[lang]}
         </Heading3>
 
-        <SimpleGrid columns={[2, null, 4]} gap={4}>
+        <SimpleGrid columns={[2, null, 4]} gap={4} mb={12}>
           {content.list.map((item, i) => {
             return (
               <CContainer key={i} p={4} borderRadius={8} gap={2} bg={"body"}>
@@ -33,6 +55,8 @@ const Benefits = () => {
             );
           })}
         </SimpleGrid>
+
+        <Clients />
       </Container>
 
       <CtaButton w={"fit"} mx={"auto"} mt={12} />

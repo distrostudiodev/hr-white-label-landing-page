@@ -2,10 +2,9 @@ import CContainer from "@/components/ui-custom/CContainer";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import HeroHome from "@/pages/section/HeroHome";
 import AboutUsHome from "./section/AboutUsHome";
-import Footer from "./section/Footer";
-import FeaturesHome from "./section/FeaturesHome";
-import LastCta from "./section/LastCta";
 import Benefits from "./section/Benefits";
+import FeaturesHome from "./section/FeaturesHome";
+import Footer from "./section/Footer";
 
 const RootPage = () => {
   useScrollToTop();
@@ -16,7 +15,6 @@ const RootPage = () => {
       <AboutUsHome />
       <FeaturesHome />
       <Benefits />
-      <LastCta />
       <Footer />
     </CContainer>
   );

@@ -18,6 +18,7 @@ import {
   IconShield,
   IconThumbUp,
 } from "@tabler/icons-react";
+import { BRAND_NAME } from "./brands";
 
 const contents = {
   headline: {
@@ -187,14 +188,28 @@ const contents = {
       ],
     },
     clients: {
-      title: {
-        id: "Fitur Unggulan",
-        en: "Featured Features",
+      intro: {
+        id: `HRMS by ${BRAND_NAME} telah dipercaya oleh berbagai perusahaan dari berbagai industri.`,
+        en: `HRMS by ${BRAND_NAME} has been trusted by various companies from various industries.`,
       },
-      subTitle: {
-        id: "Semua fitur HR dalam satu platform efektif.",
-        en: "All HR features in one effective platform.",
-      },
+      list: [
+        {
+          name: "Rumah Sakit Kasih Ibu Surakarta",
+          img: `${IMAGES_PATH}/clients/images.jpg`,
+        },
+        {
+          name: "Rumah Sakit Kasih Ibu Surakarta",
+          img: `${IMAGES_PATH}/clients/images.jpg`,
+        },
+        {
+          name: "Rumah Sakit Kasih Ibu Surakarta",
+          img: `${IMAGES_PATH}/clients/images.jpg`,
+        },
+        {
+          name: "Rumah Sakit Kasih Ibu Surakarta",
+          img: `${IMAGES_PATH}/clients/images.jpg`,
+        },
+      ],
     },
     footer: {
       contact: {
