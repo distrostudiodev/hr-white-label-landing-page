@@ -10,9 +10,10 @@ import { IMAGES_PATH } from "@/constant/path";
 import { responsiveSpacing2 } from "@/constant/sizes";
 import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
-import { HStack, Image, Stack } from "@chakra-ui/react";
+import { HStack, Icon, Image, Stack } from "@chakra-ui/react";
 import Container from "./Container";
 import useScreen from "@/hooks/useScreen";
+import { IconArrowUpRight } from "@tabler/icons-react";
 
 const Hero = () => {
   const { lang } = useLang();
@@ -41,7 +42,7 @@ const Hero = () => {
               w={["100%", null, "60%"]}
               justify={"center"}
               px={responsiveSpacing2}
-              py={20}
+              py={28}
               my={"auto"}
               align={"start"}
             >
@@ -62,9 +63,12 @@ const Hero = () => {
                 px={"40px"}
                 colorPalette={PRIMARY_COLOR_PALETTE}
                 size={"2xl"}
-                fontSize={"18px !important"}
+                fontSize={"xl !important"}
               >
                 {content.cta[lang]}
+                <Icon>
+                  <IconArrowUpRight />
+                </Icon>
               </BButton>
             </CContainer>
           </CContainer>

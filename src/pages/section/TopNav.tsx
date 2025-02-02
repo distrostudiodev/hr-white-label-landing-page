@@ -5,11 +5,12 @@ import { PRIMARY_COLOR_PALETTE } from "@/constant/paletteConfig";
 import useNavs from "@/context/useNavs";
 import { useLang } from "@/hooks/useLang";
 import useScreen from "@/hooks/useScreen";
-import { Box, BoxProps, Button, HStack } from "@chakra-ui/react";
+import { Box, BoxProps, Button, HStack, Icon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
 import NavDrawer from "./NavDrawer";
+import { IconArrowUpRight } from "@tabler/icons-react";
 
 type Props = {
   activeNavIndex?: number;
@@ -113,6 +114,9 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           <HStack flexShrink={0} w={[null, null, "100px"]} justify={"flex-end"}>
             <BButton colorPalette={PRIMARY_COLOR_PALETTE}>
               {contents.home.hero.cta[lang]}
+              <Icon>
+                <IconArrowUpRight />
+              </Icon>
             </BButton>
           </HStack>
         </HStack>

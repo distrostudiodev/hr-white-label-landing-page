@@ -32,8 +32,8 @@ const contents = {
         en: "Optimize HR Management with Modern Technology.",
       },
       cta: {
-        id: "Coba Gratis!",
-        en: "Try It Free!",
+        id: "Coba Gratis",
+        en: "Try It Free",
       },
     },
     aboutUs: {
@@ -129,6 +129,16 @@ const contents = {
           },
         },
       ],
+    },
+    clients: {
+      title: {
+        id: "Fitur Unggulan",
+        en: "Featured Features",
+      },
+      subTitle: {
+        id: "Semua fitur HR dalam satu platform efektif.",
+        en: "All HR features in one effective platform.",
+      },
     },
     footer: {
       contact: {
