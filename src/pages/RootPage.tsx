@@ -6,6 +6,8 @@ import Benefits from "./section/Benefits";
 import FeaturesHome from "./section/FeaturesHome";
 import Footer from "./section/Footer";
 import WAWidget from "@/components/widget/WAWidget";
+import Faqs from "./section/Faqs";
+import CtaIndependentDisclosure from "@/components/widget/CtaIndependentDisclosure";
 
 const RootPage = () => {
   useScrollToTop();
@@ -16,8 +18,11 @@ const RootPage = () => {
       <AboutUsHome />
       <FeaturesHome />
       <Benefits />
+      <Faqs />
+
       <Footer />
 
+      <CtaIndependentDisclosure />
       <WAWidget />
     </CContainer>
   );
