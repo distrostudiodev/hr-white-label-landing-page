@@ -404,6 +404,22 @@ button {
 }
 
 /* Keyframes */
+@keyframes infinite-scroll-r {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+@keyframes infinite-scroll-l {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(50%));
+  }
+}
 @keyframes hero-top-0 {
   0% {
     opacity: 0.06;
