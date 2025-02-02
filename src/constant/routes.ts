@@ -1,4 +1,5 @@
 import AboutUsPage from "@/pages/AboutUsPage";
+import ProductsPage from "@/pages/ProductsPage";
 import RootPage from "@/pages/RootPage";
 import ServicesPage from "@/pages/ServicesPage";
 import WorkDetail from "@/pages/WorkDetail";
@@ -22,6 +23,10 @@ const withNavRoutes: Array<PathRouteProps> = [
   {
     path: "/services",
     element: createElement(ServicesPage),
+  },
+  {
+    path: "/products",
+    element: createElement(ProductsPage),
   },
 
   {
