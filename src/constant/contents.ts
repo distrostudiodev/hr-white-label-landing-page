@@ -1,11 +1,8 @@
 import {
-  Globe,
   InstagramLogo,
   LinkedinLogo,
   WhatsappLogo,
 } from "@phosphor-icons/react";
-import { BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
-import { IMAGES_PATH } from "./path";
 import {
   IconBolt,
   IconCalendar,
@@ -19,13 +16,9 @@ import {
   IconThumbUp,
 } from "@tabler/icons-react";
 import { BRAND_NAME } from "./brands";
+import { IMAGES_PATH } from "./path";
 
 const contents = {
-  headline: {
-    id: "Tempat Ide Visioner Menjadi Nyata",
-    en: "Where Visionary Ideas Take Shape",
-  },
-  tagline: "visionary engineering",
   home: {
     hero: {
       title: {
@@ -211,22 +204,7 @@ const contents = {
         },
       ],
     },
-    footer: {
-      contact: {
-        id: "Kontak",
-        en: "Contact",
-      },
-      socialMedia: {
-        id: "Media Sosial",
-        en: "Social Media",
-      },
-      copyright: {
-        id: "Hak Cipta",
-        en: "Copyright",
-      },
-    },
   },
-
   stats: [
     {
       value: { id: "2M+", en: "2Jt+" },
@@ -257,384 +235,53 @@ const contents = {
       },
     },
   ],
-  clients: [
-    {
-      logo: `${IMAGES_PATH}/clients/rski.png`,
-      logoGray: `${IMAGES_PATH}/clients/rski_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/gerindra.png`,
-      logoGray: `${IMAGES_PATH}/clients/gerindra_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/poltekkes.png`,
-      logoGray: `${IMAGES_PATH}/clients/poltekkes_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/bpjs.png`,
-      logoGray: `${IMAGES_PATH}/clients/bpjs_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/poltekkes.png`,
-      logoGray: `${IMAGES_PATH}/clients/poltekkes_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/gerindra.png`,
-      logoGray: `${IMAGES_PATH}/clients/gerindra_gray.png`,
-      name: "Lorem Ipsum",
-    },
-  ],
-  iconicClients: [
-    {
-      logo: `${IMAGES_PATH}/clients/rski.png`,
-      logoGray: `${IMAGES_PATH}/clients/rski_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/gerindra.png`,
-      logoGray: `${IMAGES_PATH}/clients/gerindra_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/poltekkes.png`,
-      logoGray: `${IMAGES_PATH}/clients/poltekkes_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/bpjs.png`,
-      logoGray: `${IMAGES_PATH}/clients/bpjs_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/poltekkes.png`,
-      logoGray: `${IMAGES_PATH}/clients/poltekkes_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/gerindra.png`,
-      logoGray: `${IMAGES_PATH}/clients/gerindra_gray.png`,
-      name: "Lorem Ipsum",
-    },
-  ],
-  clientStories: [
-    {
-      image: `${IMAGES_PATH}/reza.jpg`,
-      name: "Haji Reza Harawi",
-      title: "Haji Mabrur 7x dalam Setahun",
-      rating: 5,
-      quote: {
-        id: "Nulla magna enim amet in culpa. Aliquip veniam consectetur esse laborum. Incididunt aute eu consectetur velit cupidatat veniam proident culpa magna. Aute tempor ad reprehenderit nisi anim velit sunt dolore qui irure irure exercitation proident. Ex sint sint do laborum ea. Non cupidatat labore occaecat laboris aute amet occaecat labore amet culpa occaecat.",
-        en: "",
-      },
-    },
-    {
-      image: `${IMAGES_PATH}/reza.jpg`,
-      name: "Haji Reza Harawi",
-      title: "Haji Mabrur 7x dalam Setahun",
-      rating: 5,
-      quote: {
-        id: "Nulla magna enim amet in culpa. Aliquip veniam consectetur esse laborum. Incididunt aute eu consectetur velit cupidatat veniam proident culpa magna. Aute tempor ad reprehenderit nisi anim velit sunt dolore qui irure irure exercitation proident. Ex sint sint do laborum ea. Non cupidatat labore occaecat laboris aute amet occaecat labore amet culpa occaecat.",
-        en: "",
-      },
-    },
-    {
-      image: `${IMAGES_PATH}/reza.jpg`,
-      name: "Haji Reza Harawi",
-      title: "Haji Mabrur 7x dalam Setahun",
-      rating: 5,
-      quote: {
-        id: "Nulla magna enim amet in culpa. Aliquip veniam consectetur esse laborum. Incididunt aute eu consectetur velit cupidatat veniam proident culpa magna. Aute tempor ad reprehenderit nisi anim velit sunt dolore qui irure irure exercitation proident. Ex sint sint do laborum ea. Non cupidatat labore occaecat laboris aute amet occaecat labore amet culpa occaecat.",
-        en: "",
-      },
-    },
-    {
-      image: `${IMAGES_PATH}/reza.jpg`,
-      name: "Haji Reza Harawi",
-      title: "Haji Mabrur 7x dalam Setahun",
-      rating: 5,
-      quote: {
-        id: "Nulla magna enim amet in culpa. Aliquip veniam consectetur esse laborum. Incididunt aute eu consectetur velit cupidatat veniam proident culpa magna. Aute tempor ad reprehenderit nisi anim velit sunt dolore qui irure irure exercitation proident. Ex sint sint do laborum ea. Non cupidatat labore occaecat laboris aute amet occaecat labore amet culpa occaecat.",
-        en: "",
-      },
-    },
-    {
-      image: `${IMAGES_PATH}/reza.jpg`,
-      name: "Haji Reza Harawi",
-      title: "Haji Mabrur 7x dalam Setahun",
-      rating: 5,
-      quote: {
-        id: "Nulla magna enim amet in culpa. Aliquip veniam consectetur esse laborum. Incididunt aute eu consectetur velit cupidatat veniam proident culpa magna. Aute tempor ad reprehenderit nisi anim velit sunt dolore qui irure irure exercitation proident. Ex sint sint do laborum ea. Non cupidatat labore occaecat laboris aute amet occaecat labore amet culpa occaecat.",
-        en: "",
-      },
-    },
-  ],
-  teams: [
-    {
-      name: "Naufal Ilyas Abdul Hakim",
-      image: `${IMAGES_PATH}/teams/naufal.png`,
-      role: "CEO",
-      sosmeds: [
-        {
-          label: "LinkedIn",
-          icon: BiLogoLinkedin,
-          link: "https://www.linkedin.com/in/bayuprasetyaadjisugiyarto/",
-        },
-        {
-          label: "Instagram",
-          icon: BiLogoInstagram,
-          link: "https://www.instagram.com/prst.b.y/",
-        },
-      ],
-      narrative:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      quote: {
-        id: "Percayalah pada diri sendiri, hadapi tantangan Anda",
-        en: "Believe in yourself, take on your challenges",
-      },
-    },
-    {
-      name: "Reza Hashfi Hawari",
-      image: `${IMAGES_PATH}/teams/reza.png`,
-      role: "President",
-      sosmeds: [
-        {
-          label: "LinkedIn",
-          icon: BiLogoLinkedin,
-          link: "https://www.linkedin.com/in/reza-hashfi-hawari-b80549202/",
-        },
-        {
-          label: "Instagram",
-          icon: BiLogoInstagram,
-          link: "https://www.instagram.com/rezahhawari/",
-        },
-      ],
-      narrative:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      quote: {
-        id: "Jatuh bukanlah suatu kegagalan. Kegagalan datang ketika Anda tetap berada di tempat Anda terjatuh.",
-        en: "Faling down is not a failure. Failure comes when you stay where you have fallen.",
-      },
-    },
-    {
-      name: "Zaenal Abidin",
-      image: `${IMAGES_PATH}/teams/zaenal.png`,
-      role: "Lead Engineer",
-      sosmeds: [
-        {
-          label: "LinkedIn",
-          icon: BiLogoLinkedin,
-          link: "https://www.linkedin.com/in/bayuprasetyaadjisugiyarto/",
-        },
-        {
-          label: "Instagram",
-          icon: BiLogoInstagram,
-          link: "https://www.instagram.com/prst.b.y/",
-        },
-      ],
-      narrative:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      quote: {
-        id: "Percayalah pada diri sendiri, hadapi tantangan Anda",
-        en: "Believe in yourself, take on your challenges",
-      },
-    },
-    {
-      name: "Azam",
-      image: `${IMAGES_PATH}/teams/reza.png`,
-      role: "UI/UX Designer",
-      sosmeds: [
-        {
-          label: "LinkedIn",
-          icon: BiLogoLinkedin,
-          link: "https://www.linkedin.com/in/bayuprasetyaadjisugiyarto/",
-        },
-        {
-          label: "Instagram",
-          icon: BiLogoInstagram,
-          link: "https://www.instagram.com/prst.b.y/",
-        },
-      ],
-      narrative:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      quote: {
-        id: "Percayalah pada diri sendiri, hadapi tantangan Anda",
-        en: "Believe in yourself, take on your challenges",
-      },
-    },
-    {
-      name: "Fatwa Linovera",
-      image: `${IMAGES_PATH}/teams/sulenq.png`,
-      role: "Frontend Developer",
-      sosmeds: [
-        {
-          label: "LinkedIn",
-          icon: BiLogoLinkedin,
-          link: "https://www.linkedin.com/in/fatwa-linovera-620672150/",
-        },
-        // {
-        //   label: "Instagram",
-        //   icon: RiInstagramFill,
-        //   link: "https://www.instagram.com/_sulenq/",
-        // },
-        {
-          label: "Website",
-          icon: Globe,
-          link: "https://fatwalinovera.netlify.app/",
-        },
-      ],
-      narrative:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      quote: {
-        id: "Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa Anda tidak tahu apa-apa",
-        en: "The only true wisdom is in knowing you know nothing",
-      },
-    },
-  ],
-  techstack: [
-    {
-      name: "HTML",
-      logo: `${IMAGES_PATH}/techstack/html.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/html.png`,
-    },
-    {
-      name: "CSS",
-      logo: `${IMAGES_PATH}/techstack/css.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/css.png`,
-    },
-    {
-      name: "React",
-      logo: `${IMAGES_PATH}/techstack/react.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/react.png`,
-    },
-    {
-      name: "Javascript",
-      logo: `${IMAGES_PATH}/techstack/js.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/js.png`,
-    },
-    {
-      name: "Typescript",
-      logo: `${IMAGES_PATH}/techstack/ts.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/ts.png`,
-    },
-    {
-      name: "ChakraUI",
-      logo: `${IMAGES_PATH}/techstack/chakraui.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/chakraui.png`,
-    },
-    {
-      name: "Zustand",
-      logo: `${IMAGES_PATH}/techstack/zustand.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/zustand.png`,
-    },
-    {
-      name: "Axios",
-      logo: `${IMAGES_PATH}/techstack/axios.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/axios.png`,
-    },
-    {
-      name: "GSAP",
-      logo: `${IMAGES_PATH}/techstack/gsap.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/gsap.png`,
-    },
-    {
-      name: "Laravel",
-      logo: `${IMAGES_PATH}/techstack/laravel.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/laravel.png`,
-    },
-    {
-      name: "PHP",
-      logo: `${IMAGES_PATH}/techstack/php.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/php.png`,
-    },
-    {
-      name: "MySQL",
-      logo: `${IMAGES_PATH}/techstack/mysql.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/mysql.png`,
-    },
-    {
-      name: "Postman",
-      logo: `${IMAGES_PATH}/techstack/postman.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/postman.png`,
-    },
-    {
-      name: "Figma",
-      logo: `${IMAGES_PATH}/techstack/figma.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/figma.png`,
-    },
-    {
-      name: "CorelDRAW",
-      logo: `${IMAGES_PATH}/techstack/corel.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/corel.png`,
-    },
-    {
-      name: "Phosphor Icon",
-      logo: `${IMAGES_PATH}/techstack/phosphoricon.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/phosphoricon.png`,
-    },
-  ],
   faqs: {
-    title: {
-      id: "Pertanyaan yang Sering Diajukan",
-      en: "Frequently Asked Questions",
-    },
-    summary: {
-      id: "Temukan jawaban untuk pertanyaan umum tentang layanan kami, proses kerja, dan informasi penting lainnya di sini. Kami siap membantu Anda dengan semua yang Anda butuhkan.",
-      en: "Find answers to common questions about our services, workflow, and other important information here. We are ready to assist you with everything you need.",
-    },
-    faqs: [
+    list: [
       {
-        title: {
-          id: "Lorem ipsum dolor sit amet?",
-          en: "Lorem ipsum dolor sit amet?",
+        q: {
+          id: "Bagaimana cara mencoba HRMS sebelum membeli?",
+          en: "How to try HRMS before buying?",
         },
-        answer: {
-          id: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, urna vel tempor dictum, velit eros viverra mi, nec varius lorem ipsum ut lectus. Suspendisse potenti. Phasellus et volutpat elit. Maecenas vulputate semper mi, ut malesuada mi auctor in.",
-          en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, urna vel tempor dictum, velit eros viverra mi, nec varius lorem ipsum ut lectus. Suspendisse potenti. Phasellus et volutpat elit. Maecenas vulputate semper mi, ut malesuada mi auctor in.",
+        a: { id: "", en: "" },
+      },
+      {
+        q: {
+          id: "Apakah HRMS bisa digunakan di berbagai perangkat?",
+          en: "Can HRMS be used on multiple devices?",
+        },
+        a: {
+          id: "Ya, HRMS dapat diakses melalui desktop, tablet, dan smartphone.",
+          en: "Yes, HRMS can be accessed via desktop, tablet, and smartphone.",
         },
       },
       {
-        title: {
-          id: "Curabitur suscipit urna vel tempor dictum?",
-          en: "Curabitur suscipit urna vel tempor dictum?",
+        q: {
+          id: "Apakah HRMS mendukung multi-cabang dan multi-divisi?",
+          en: "Does HRMS support multi-branch and multi-division management?",
         },
-        answer: {
-          id: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, tortor nec bibendum interdum, arcu urna dapibus metus, at gravida ex mi id nulla. Nullam sollicitudin libero sit amet mauris dapibus tincidunt. Integer nec volutpat sapien. Curabitur euismod fermentum urna.",
-          en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, tortor nec bibendum interdum, arcu urna dapibus metus, at gravida ex mi id nulla. Nullam sollicitudin libero sit amet mauris dapibus tincidunt. Integer nec volutpat sapien. Curabitur euismod fermentum urna.",
-        },
-      },
-      {
-        title: {
-          id: "Morbi euismod nulla a neque cursus?",
-          en: "Morbi euismod nulla a neque cursus?",
-        },
-        answer: {
-          id: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod nulla a neque cursus, sed viverra augue tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer euismod, nibh ut vulputate accumsan, dui sapien maximus eros, vitae sagittis velit eros sed mauris.",
-          en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod nulla a neque cursus, sed viverra augue tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer euismod, nibh ut vulputate accumsan, dui sapien maximus eros, vitae sagittis velit eros sed mauris.",
+        a: {
+          id: "Ya, HRMS mendukung pengelolaan multi-cabang dan multi-divisi dalam satu sistem.",
+          en: "Yes, HRMS supports multi-branch and multi-division management in one system.",
         },
       },
       {
-        title: {
-          id: "Vestibulum ante ipsum primis in faucibus?",
-          en: "Vestibulum ante ipsum primis in faucibus?",
+        q: {
+          id: "Bagaimana sistem support dan layanan pelanggan HRMS?",
+          en: "How does HRMS customer support work?",
         },
-        answer: {
-          id: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In hac habitasse platea dictumst. Praesent tincidunt, sapien nec sollicitudin feugiat, arcu sem venenatis nisi, id interdum est nunc non tortor. Ut vitae lorem eget lacus consequat auctor. Donec blandit sollicitudin ex nec aliquet.",
-          en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In hac habitasse platea dictumst. Praesent tincidunt, sapien nec sollicitudin feugiat, arcu sem venenatis nisi, id interdum est nunc non tortor. Ut vitae lorem eget lacus consequat auctor. Donec blandit sollicitudin ex nec aliquet.",
+        a: {
+          id: "Kami menyediakan layanan pelanggan 24/7 melalui email, chat, dan telepon.",
+          en: "We provide 24/7 customer support via email, chat, and phone.",
         },
       },
       {
-        title: {
-          id: "Nullam sollicitudin libero sit amet?",
-          en: "Nullam sollicitudin libero sit amet?",
+        q: {
+          id: "Apakah HRMS dapat disesuaikan dengan kebutuhan perusahaan?",
+          en: "Can HRMS be customized to fit company needs?",
         },
-        answer: {
-          id: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin libero sit amet mauris dapibus tincidunt. Integer nec volutpat sapien. Maecenas id tristique ligula. Ut cursus, nisl a convallis condimentum, ligula orci suscipit odio, in tempus mauris nisl vel ligula.",
-          en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin libero sit amet mauris dapibus tincidunt. Integer nec volutpat sapien. Maecenas id tristique ligula. Ut cursus, nisl a convallis condimentum, ligula orci suscipit odio, in tempus mauris nisl vel ligula.",
+        a: {
+          id: "Ya, HRMS memiliki fitur yang dapat dikustomisasi sesuai kebutuhan bisnis Anda.",
+          en: "Yes, HRMS has features that can be customized to fit your business needs.",
         },
       },
     ],
