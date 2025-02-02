@@ -7,6 +7,12 @@ import { HStack, Icon, Image, Text } from "@chakra-ui/react";
 import Container from "./Container";
 import { useState } from "react";
 import BButton from "@/components/ui-custom/BButton";
+import {
+  AccordionItem,
+  AccordionItemContent,
+  AccordionItemTrigger,
+  AccordionRoot,
+} from "@/components/ui/accordion";
 
 const FeaturesHome = () => {
   const { lang } = useLang();
@@ -31,7 +37,7 @@ const FeaturesHome = () => {
 
         {!iss && (
           <HStack borderRadius={8} align={"stretch"} gap={4}>
-            <CContainer w={"40%"} gap={2}>
+            <CContainer w={"40%"} gap={2} p={4} justify={"center"}>
               {content.list.map((item, i) => {
                 const active = activeIndex === i;
 
@@ -62,6 +68,29 @@ const FeaturesHome = () => {
               <Text>{activeitem.description[lang]}</Text>
             </CContainer>
           </HStack>
+        )}
+
+        {iss && (
+          <CContainer>
+            <AccordionRoot collapsible defaultValue={["b"]}>
+              {content.list.map((item, i) => (
+                <AccordionItem key={i} value={item.label[lang]}>
+                  <AccordionItemTrigger>
+                    <Icon>
+                      <item.icon size={"16px"} />
+                    </Icon>
+                    {item.label[lang]}
+                  </AccordionItemTrigger>
+                  <AccordionItemContent>
+                    <Image src={item.img} borderRadius={6} mb={4} />
+                    <CContainer px={2}>
+                      <Text>{item.description[lang]}</Text>
+                    </CContainer>
+                  </AccordionItemContent>
+                </AccordionItem>
+              ))}
+            </AccordionRoot>
+          </CContainer>
         )}
       </Container>
     </CContainer>
