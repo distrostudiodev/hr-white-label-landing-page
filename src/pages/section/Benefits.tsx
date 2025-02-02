@@ -39,7 +39,7 @@ const Benefits = () => {
           {content.title[lang]}
         </Heading3>
 
-        <SimpleGrid columns={[1, 2, 4]} gap={4} mb={12}>
+        <SimpleGrid columns={[1, 2, null, 4]} gap={4} mb={12}>
           {content.list.map((item, i) => {
             return (
               <CContainer key={i} p={4} borderRadius={8} gap={2} bg={"body"}>

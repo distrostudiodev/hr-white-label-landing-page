@@ -1,19 +1,18 @@
-import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading1 from "@/components/ui-custom/Heading1";
 import Heading5 from "@/components/ui-custom/Heading5";
+import CtaButton from "@/components/widget/CtaButton";
 import Logo from "@/components/widget/Logo";
 import { BRAND_NAME } from "@/constant/brands";
 import contents from "@/constant/contents";
-import { PRIMARY_COLOR_PALETTE } from "@/constant/paletteConfig";
 import { IMAGES_PATH } from "@/constant/path";
 import { responsiveSpacing2 } from "@/constant/sizes";
 import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
-import { HStack, Icon, Image, Stack, Text } from "@chakra-ui/react";
-import Container from "../../components/ui-custom/Container";
 import useScreen from "@/hooks/useScreen";
-import { IconArrowUpRight, IconCheck } from "@tabler/icons-react";
+import { HStack, Icon, Image, Stack, Text } from "@chakra-ui/react";
+import { IconCheck } from "@tabler/icons-react";
+import Container from "../../components/ui-custom/Container";
 
 const Hero = () => {
   const { lang } = useLang();
@@ -72,17 +71,7 @@ const Hero = () => {
                 })}
               </CContainer>
 
-              <BButton
-                px={"40px"}
-                colorPalette={PRIMARY_COLOR_PALETTE}
-                size={"2xl"}
-                fontSize={"xl !important"}
-              >
-                {content.cta[lang]}
-                <Icon>
-                  <IconArrowUpRight />
-                </Icon>
-              </BButton>
+              <CtaButton size={"2xl"} fontSize={"xl !important"} />
             </CContainer>
           </CContainer>
 

@@ -10,6 +10,8 @@ import {
   IconClock,
   IconCoins,
   IconDatabase,
+  IconDeviceDesktop,
+  IconDeviceMobile,
   IconHierarchy,
   IconReport,
   IconShield,
@@ -221,6 +223,30 @@ const contents = {
       ],
     },
   },
+  links: {
+    personalia: {
+      icon: IconDeviceDesktop,
+      link: "https://hrweb.distrostudio.org/",
+      title: "Personalia",
+      description: {
+        id: "Manajemen data karyawan.",
+        en: "Employee data management.",
+      },
+      username: "super.admin",
+      password: "superadmin123",
+    },
+    employee: {
+      icon: IconDeviceMobile,
+      link: "https://hr.distrostudio.org/",
+      title: "Employee (Mobile)",
+      description: {
+        id: "Akses mobile untuk karyawan.",
+        en: "Mobile access for employees.",
+      },
+      username: "test1",
+      password: "1234",
+    },
+  },
   stats: [
     {
       value: { id: "2M+", en: "2Jt+" },
@@ -258,7 +284,10 @@ const contents = {
           id: "Bagaimana cara mencoba HRMS sebelum membeli?",
           en: "How to try HRMS before buying?",
         },
-        a: { id: "", en: "" },
+        a: {
+          id: "Anda bisa mencoba gratis melalui tombol ini.",
+          en: "You can try it for free via this button.",
+        },
       },
       {
         q: {
