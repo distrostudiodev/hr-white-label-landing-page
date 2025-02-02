@@ -31,9 +31,9 @@ const Hero = () => {
         position={"relative"}
         overflow={"clip"}
         mt={"-56px"}
-        bg={"bg.subtle"}
+        // bg={"bg.subtle"}
         borderBottomLeftRadius={sw > 1280 ? "100px" : ""}
-        borderBottomRightRadius={sw > 1280 ? "100px" : ""}
+        borderBottomRightRadius={sw > 1280 ? "200px" : ""}
       >
         <Stack h={"full"} flexDir={["column", null, "row"]}>
           <CContainer w={"full"} zIndex={2} pt={"56px"}>

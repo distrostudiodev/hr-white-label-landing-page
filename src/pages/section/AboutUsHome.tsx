@@ -1,26 +1,28 @@
 import CContainer from "@/components/ui-custom/CContainer";
-import Heading5 from "@/components/ui-custom/Heading5";
 import contents from "@/constant/contents";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
-import {
-  Center,
-  Grid,
-  GridItem,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
-import { useState } from "react";
+import { Text } from "@chakra-ui/react";
 import Container from "./Container";
 
 const AboutUsHome = () => {
   const { lang } = useLang();
-  const [itemHover, setitemHover] = useState<number | undefined>(undefined);
+  const content = contents.home.aboutUs;
 
   return (
-    <CContainer pt={20} borderTop={"2px solid"} borderColor={"border.muted"}>
-      <Container mb={20}>
+    <CContainer py={20}>
+      <Container>
+        <Text
+          textAlign={"center"}
+          fontSize={"1.2rem"}
+          maxW={"600px"}
+          mx={"auto"}
+          lineHeight={"tall"}
+        >
+          {content.intro[lang]}
+        </Text>
+      </Container>
+
+      {/* <Container mb={20}>
         <Grid
           gap={responsiveSpacing3}
           templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
@@ -48,50 +50,7 @@ const AboutUsHome = () => {
             </SimpleGrid>
           </GridItem>
         </Grid>
-      </Container>
-
-      <CContainer
-        borderTop={"1px solid"}
-        borderBottom={"1px solid"}
-        borderColor={"var(--divider2)"}
-      >
-        <Container px={0} borderColor={"var(--divider2)"}>
-          <SimpleGrid
-            columns={[2, null, 8]}
-            borderLeft={"1px solid"}
-            borderRight={"1px solid"}
-            borderColor={"var(--divider2)"}
-          >
-            {contents.techstack.map((tech, i) => (
-              <Center
-                key={i}
-                borderRight={
-                  i < contents.techstack.length - 1 ? "2px solid" : ""
-                }
-                border={"1px solid"}
-                borderColor={"var(--divider2)"}
-                p={responsiveSpacing2}
-                transition={"400ms"}
-                _hover={{ bg: "bg.muted" }}
-                onMouseEnter={() => {
-                  setitemHover(i);
-                }}
-                onMouseLeave={() => {
-                  setitemHover(undefined);
-                }}
-              >
-                <Image
-                  alt={`Logo ${tech.name}`}
-                  src={itemHover === i ? tech.logo : tech.logoGray}
-                  // src={tech.logo}
-                  h={"50px"}
-                  maxW={"120px"}
-                />
-              </Center>
-            ))}
-          </SimpleGrid>
-        </Container>
-      </CContainer>
+      </Container> */}
     </CContainer>
   );
 };

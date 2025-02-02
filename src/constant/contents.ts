@@ -1,18 +1,15 @@
 import {
   ChartLineDown,
-  ChatTeardropDots,
   DesktopTower,
   DeviceMobile,
   Devices,
   Globe,
   InstagramLogo,
   LinkedinLogo,
-  Trophy,
-  UsersThree,
   WhatsappLogo,
 } from "@phosphor-icons/react";
-import { ASSETS_PATH, IMAGES_PATH } from "./path";
 import { BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
+import { ASSETS_PATH, IMAGES_PATH } from "./path";
 
 const contents = {
   headline: {
@@ -34,35 +31,15 @@ const contents = {
         id: "Coba Gratis!",
         en: "Try It Free!",
       },
-      ctaDescription: {
-        id: "Diskusi dengan tim kami",
-        en: "Talk with our team",
-      },
-    },
-    works: {
-      title: { id: "Karya Terbaru Exium", en: "Exium's Latest Works" },
-      intro: {
-        id: "Proyek unggulan kami mencerminkan keahlian dalam survei umum dan pemindaian ke BIM.",
-        en: "Our standout projects showcase expertise in general surveys and scan-to-BIM.",
-      },
-      clientLabel: { id: "Klien", en: "Client" },
-      locationLabel: { id: "Lokasi", en: "Location" },
-      yearLabel: { id: "Tahun", en: "Year" },
-      locationYearLabel: { id: "Lokasi/Tahun", en: "Location/Year" },
-      detailWorkLabel: { id: "Lihat detail", en: "View detail" },
-      cta: {
-        id: "Semua Karya",
-        en: "All Works",
-      },
     },
     aboutUs: {
       title: {
-        id: "Tentang Exium",
-        en: "About Exium",
+        id: "Tentang HRMS",
+        en: "About HRMS",
       },
       intro: {
-        id: "Exium adalah mitra teknologi Anda yang berfokus pada solusi inovatif untuk mendukung kesuksesan bisnis Anda. Kami memahami bahwa setiap bisnis unik, sehingga kami menghadirkan layanan yang dapat disesuaikan dengan kebutuhan spesifik Anda untuk memberikan pengalaman yang berharga bagi pengguna.",
-        en: "Exium is your technology partner, dedicated to innovative solutions that support your business success. We understand that every business is unique, so we offer services tailored to your specific needs to provide valuable experiences for your users.",
+        id: "Kelola karyawan dengan lebih mudah, cepat, dan efisien menggunakan HRMS, sistem manajemen sumber daya manusia yang dirancang untuk memenuhi kebutuhan bisnis Anda. Dari absensi hingga penggajian, semua dalam satu platform yang intuitif dan fleksibel.",
+        en: "Manage employees more easily, quickly, and efficiently using HRMS, a human resource management system designed to meet your business needs. From attendance to payroll, all in one intuitive and flexible platform.",
       },
     },
     services: {
@@ -79,62 +56,6 @@ const contents = {
         id: "Rincian Layanan",
         en: "Details of Services",
       },
-    },
-    tww: {
-      title: {
-        id: "Cara Exium Bekerja",
-        en: "The Way Exium Works",
-      },
-      intro: {
-        id: "Exium adalah mitra transformasi digital yang komprehensif, menghadirkan solusi teknologi canggih yang disesuaikan dengan kebutuhan unik setiap bisnis. Kami menggabungkan keahlian mendalam, inovasi mutakhir, dan pendekatan strategic untuk membantu organisasi Anda berkembang di era digital.",
-        en: "Exium is a comprehensive digital transformation partner, delivering cutting-edge technological solutions tailored to the unique needs of each business. We combine deep expertise, leading-edge innovation, and a strategic approach to help your organization thrive in the digital era.",
-      },
-      list: [
-        {
-          title: {
-            id: "Konsultasi Mendalam",
-            en: "In-Depth Consultation",
-          },
-          description: {
-            id: "Kami memulai dengan analisis menyeluruh tentang infrastruktur digital, proses bisnis, dan tantangan spesifik yang Anda hadapi. Tim ahli kami melakukan wawancara komprehensif untuk memahami setiap aspek kebutuhan teknologi Anda.",
-            en: "We begin with a comprehensive analysis of your digital infrastructure, business processes, and specific challenges. Our expert team conducts in-depth interviews to understand every aspect of your technological needs.",
-          },
-          icon: UsersThree,
-        },
-        {
-          title: {
-            id: "Desain Solusi Khusus",
-            en: "Custom Solution Design",
-          },
-          description: {
-            id: "Berdasarkan temuan konsultasi, kami merancang solusi teknologi yang dipersonalisasi. Setiap strategi dikembangkan dengan presisi untuk menyelesaikan permasalahan unik dan mengoptimalkan kinerja digital bisnis Anda.",
-            en: "Based on consultation findings, we design personalized technological solutions. Each strategy is developed with precision to address unique challenges and optimize your business's digital performance.",
-          },
-          icon: ChatTeardropDots,
-        },
-        {
-          title: {
-            id: "Implementasi Cerdas",
-            en: "Intelligent Implementation",
-          },
-          description: {
-            id: "Tim teknisi profesional kami mengimplementasikan solusi dengan pendekatan bertahap dan terukur. Kami memastikan transisi minimal gangguan, memberikan pelatihan komprehensif, dan mendukung adaptasi teknologi baru dalam organisasi Anda.",
-            en: "Our professional tech team implements solutions with a phased and measured approach. We ensure minimal disruption, provide comprehensive training, and support the adaptation of new technologies within your organization.",
-          },
-          icon: Devices,
-        },
-        {
-          title: {
-            id: "Dukungan Berkelanjutan",
-            en: "Continuous Support",
-          },
-          description: {
-            id: "Komitmen kami tidak berhenti setelah implementasi. Kami menyediakan dukungan purna jual yang mencakup pemantauan berkala, pemeliharaan sistem, optimasi berkelanjutan, dan konsultasi untuk memastikan solusi teknologi Anda tetap terdepan dan efektif.",
-            en: "Our commitment doesn't stop after implementation. We provide ongoing support including periodic monitoring, system maintenance, continuous optimization, and consultation to ensure your technological solutions remain cutting-edge and effective.",
-          },
-          icon: Trophy,
-        },
-      ],
     },
     footer: {
       contact: {
