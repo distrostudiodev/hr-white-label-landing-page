@@ -28,7 +28,7 @@ const FeaturesHome = () => {
 
   return (
     <CContainer pb={20}>
-      <Container maxW={"1080px"}>
+      <Container>
         <Heading3 fontWeight={"bold"} textAlign={"center"} mb={2}>
           {content.title[lang]}
         </Heading3>

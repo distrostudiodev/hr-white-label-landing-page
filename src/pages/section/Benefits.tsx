@@ -43,7 +43,7 @@ const Benefits = () => {
           {content.list.map((item, i) => {
             return (
               <CContainer key={i} p={4} borderRadius={8} gap={2} bg={"body"}>
-                <Circle bg={"p.500a"} w={"fit"} p={2} mb={2}>
+                <Circle bg={"p.500"} w={"fit"} p={2} mb={2} color={"white"}>
                   <item.icon />
                 </Circle>
 
