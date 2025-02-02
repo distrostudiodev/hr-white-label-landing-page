@@ -7,12 +7,16 @@ import {
 import { BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
 import { IMAGES_PATH } from "./path";
 import {
+  IconBolt,
   IconCalendar,
   IconChartLine,
   IconClock,
   IconCoins,
   IconDatabase,
+  IconHierarchy,
   IconReport,
+  IconShield,
+  IconThumbUp,
 } from "@tabler/icons-react";
 
 const contents = {
@@ -132,13 +136,55 @@ const contents = {
     },
     benefits: {
       title: {
-        id: "Fitur Unggulan",
-        en: "Featured Features",
+        id: "Kenapa Memilih HRMS?",
+        en: "Why Choose HRMS?",
       },
-      subTitle: {
-        id: "Semua fitur HR dalam satu platform efektif.",
-        en: "All HR features in one effective platform.",
-      },
+      list: [
+        {
+          icon: IconThumbUp,
+          label: {
+            id: "Mudah Digunakan",
+            en: "Easy to Use",
+          },
+          description: {
+            id: "Antarmuka intuitif yang dapat digunakan oleh semua level pengguna.",
+            en: "Intuitive interface that can be used by all levels of users.",
+          },
+        },
+        {
+          icon: IconShield,
+          label: {
+            id: "Aman & Terpercaya",
+            en: "Secure & Reliable",
+          },
+          description: {
+            id: "Sistem dengan enkripsi data tinggi untuk menjaga keamanan informasi perusahaan Anda.",
+            en: "System with high-level data encryption to protect your company's information.",
+          },
+        },
+        {
+          icon: IconBolt,
+          label: {
+            id: "Skalabilitas Tinggi",
+            en: "Highly Scalable",
+          },
+          description: {
+            id: "Cocok untuk bisnis kecil hingga perusahaan besar dengan ribuan karyawan.",
+            en: "Suitable for small businesses to large enterprises with thousands of employees.",
+          },
+        },
+        {
+          icon: IconHierarchy,
+          label: {
+            id: "Integrasi Fleksibel",
+            en: "Flexible Integration",
+          },
+          description: {
+            id: "Dapat dihubungkan dengan sistem lain seperti accounting, ERP, dan payroll.",
+            en: "Can be connected with other systems such as accounting, ERP, and payroll.",
+          },
+        },
+      ],
     },
     clients: {
       title: {

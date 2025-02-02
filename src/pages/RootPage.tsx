@@ -5,7 +5,6 @@ import AboutUsHome from "./section/AboutUsHome";
 import Footer from "./section/Footer";
 import FeaturesHome from "./section/FeaturesHome";
 import LastCta from "./section/LastCta";
-import Clients from "./section/Clients";
 import Benefits from "./section/Benefits";
 
 const RootPage = () => {
@@ -17,7 +16,6 @@ const RootPage = () => {
       <AboutUsHome />
       <FeaturesHome />
       <Benefits />
-      <Clients />
       <LastCta />
       <Footer />
     </CContainer>

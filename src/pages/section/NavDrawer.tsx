@@ -69,7 +69,7 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
       <Portal>
         <CContainer
           position={"fixed"}
-          top={open ? "0" : "-100dvh"}
+          top={open ? "0" : "-120dvh"}
           left={0}
           zIndex={99}
           bg={"#303030df"}
