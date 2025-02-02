@@ -70,7 +70,7 @@ const ServicesPage = () => {
 
       {/* Content */}
       <Container>
-        <SimpleGrid columns={[1, 2, 4]} gap={responsiveSpacing2}>
+        <SimpleGrid columns={[1, 2, null, 4]} gap={responsiveSpacing2}>
           {contents.services.list.map((service, i) => (
             <CContainer
               p={responsiveSpacing2}
