@@ -51,7 +51,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       transition={"400ms"}
       color={"ibody"}
       animation={"flyInFromTop 1s"}
-      bg={!navTrigger ? "#303030df" : ""}
+      bg={!navTrigger ? "body" : ""}
       backdropFilter={!navTrigger ? "blur(5px)" : ""}
       {...props}
     >
@@ -71,14 +71,14 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
             /> */}
             <HStack mx={"auto"}>
               <ColorModeButton
-                color={!navTrigger ? "white" : "ibody"}
+                color={"ibody"}
                 borderRadius={"full"}
                 className={"btn"}
                 size={"lg"}
               />
 
               <LangSwitcher
-                color={!navTrigger ? "white" : "ibody"}
+                color={"ibody"}
                 borderRadius={"full"}
                 size={"lg"}
                 fontSize={"1rem !important"}
