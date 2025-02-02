@@ -6,28 +6,21 @@ const navs: Interface__Nav[] = [
       id: "Beranda",
       en: "Home",
     },
-    link: "/",
+    link: "#hero",
   },
   {
     label: {
-      id: "Karya",
-      en: "Works",
+      id: "Tentang",
+      en: "About",
     },
-    link: "/works",
+    link: "#about",
   },
   {
     label: {
-      id: "Tentang Kami",
-      en: "About Us",
+      id: "Fitur",
+      en: "Features",
     },
-    link: "/about-us",
-  },
-  {
-    label: {
-      id: "Layanan",
-      en: "Services",
-    },
-    link: "/services",
+    link: "/#features",
   },
   // {
   //   label: {
