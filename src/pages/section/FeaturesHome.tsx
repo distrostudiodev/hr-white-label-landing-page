@@ -74,14 +74,14 @@ const FeaturesHome = () => {
 
         {iss && (
           <CContainer>
-            <AccordionRoot collapsible defaultValue={["b"]}>
+            <AccordionRoot collapsible defaultValue={["b"]} size={"lg"}>
               {content.list.map((item, i) => (
                 <AccordionItem key={i} value={item.label[lang]}>
                   <AccordionItemTrigger>
                     <Icon>
                       <item.icon size={"16px"} />
                     </Icon>
-                    {item.label[lang]}
+                    <Text fontSize={"1rem"}>{item.label[lang]}</Text>
                   </AccordionItemTrigger>
                   <AccordionItemContent>
                     <Image src={item.img} borderRadius={6} mb={4} />
