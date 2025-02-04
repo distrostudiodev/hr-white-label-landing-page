@@ -159,7 +159,7 @@ const contents = {
             en: "Easy to Use",
           },
           description: {
-            id: "Antarmuka intuitif yang dapat digunakan oleh semua level pengguna.",
+            id: "Antarmuka intuitif untuk semua level pengguna.",
             en: "Intuitive interface that can be used by all levels of users.",
           },
         },
@@ -170,7 +170,7 @@ const contents = {
             en: "Secure & Reliable",
           },
           description: {
-            id: "Sistem dengan enkripsi data tinggi untuk menjaga keamanan informasi perusahaan Anda.",
+            id: "Data perusahaan terenkripsi untuk keamanan maksimal.",
             en: "System with high-level data encryption to protect your company's information.",
           },
         },
@@ -181,7 +181,7 @@ const contents = {
             en: "Highly Scalable",
           },
           description: {
-            id: "Cocok untuk bisnis kecil hingga perusahaan besar dengan ribuan karyawan.",
+            id: "Cocok untuk bisnis kecil hingga perusahaan besar.",
             en: "Suitable for small businesses to large enterprises with thousands of employees.",
           },
         },
@@ -192,7 +192,7 @@ const contents = {
             en: "Flexible Integration",
           },
           description: {
-            id: "Dapat dihubungkan dengan sistem lain seperti accounting, ERP, dan payroll.",
+            id: "Dapat dihubungkan dengan ERP, akuntansi, dan payroll lainnya.",
             en: "Can be connected with other systems such as accounting, ERP, and payroll.",
           },
         },
@@ -200,8 +200,8 @@ const contents = {
     },
     clients: {
       intro: {
-        id: `HRMS by ${BRAND_NAME} telah dipercaya oleh berbagai perusahaan dari berbagai industri.`,
-        en: `HRMS by ${BRAND_NAME} has been trusted by various companies from various industries.`,
+        id: `HRMS by ${BRAND_NAME} telah dipercaya oleh berbagai perusahaan.`,
+        en: `HRMS by ${BRAND_NAME} has been trusted by various companies.`,
       },
       list: [
         {

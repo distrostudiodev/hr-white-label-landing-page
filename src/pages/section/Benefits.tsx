@@ -12,7 +12,7 @@ const Clients = () => {
 
   return (
     <CContainer>
-      <Text fontSize={"md"} textAlign={"center"} mb={12}>
+      <Text fontSize={"lg"} textAlign={"center"} mb={12}>
         {content.intro[lang]}
       </Text>
 
