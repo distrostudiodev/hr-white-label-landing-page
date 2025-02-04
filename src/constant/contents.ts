@@ -24,8 +24,8 @@ const contents = {
   home: {
     hero: {
       title: {
-        id: "Solusi Manajemen SDM yang Efektif dan Efisien",
-        en: "Effective and Efficient HR Management Solution",
+        id: "Solusi HRD Terbaik untuk Manajemen SDM yang Efektif",
+        en: "Best HRD Solution for Effective HR Management",
       },
       subTitle: {
         id: "Optimalkan Pengelolaan SDM dengan Teknologi Modern.",
@@ -58,13 +58,13 @@ const contents = {
         en: "About HRMS",
       },
       intro: {
-        id: "Kelola karyawan dengan lebih mudah, cepat, dan efisien menggunakan HRMS, sistem manajemen sumber daya manusia yang dirancang untuk memenuhi kebutuhan bisnis Anda. Dari absensi hingga penggajian, semua dalam satu platform yang intuitif dan fleksibel.",
-        en: "Manage employees more easily, quickly, and efficiently using HRMS, a human resource management system designed to meet your business needs. From attendance to payroll, all in one intuitive and flexible platform.",
+        id: "Kelola sumber daya manusia dengan lebih mudah, cepat, dan efisien menggunakan HRMS, solusi HRD berbasis teknologi yang membantu perusahaan dalam mengelola absensi, penggajian, cuti, evaluasi kinerja, hingga laporan analitik dalam satu sistem terintegrasi. Dengan HRMS, perusahaan dapat meningkatkan produktivitas tim dan mengurangi pekerjaan administratif yang memakan waktu.",
+        en: "Manage human resources more easily, quickly, and efficiently using HRMS, a technology-based HRD solution that helps companies manage attendance, payroll, leave, performance evaluation, and analytical reports in one integrated system. With HRMS, companies can increase team productivity and reduce time-consuming administrative work.",
       },
     },
     features: {
       title: {
-        id: "Fitur Unggulan",
+        id: "Fitur Unggulan HRMS – Solusi HRD Lengkap untuk Bisnis",
         en: "Featured Features",
       },
       subTitle: {
@@ -80,8 +80,8 @@ const contents = {
             en: "Automatic Attendance Management",
           },
           description: {
-            id: "Pantau kehadiran karyawan secara real-time dengan sistem absensi berbasis GPS, fingerprint, atau face recognition.",
-            en: "Monitor employee attendance in real-time with a GPS, fingerprint, or face recognition-based attendance system.",
+            id: "Pantau kehadiran karyawan secara real-time dengan teknologi GPS, atau face recognition.",
+            en: "Monitor employee attendance in real-time with GPS technology, or face recognition.",
           },
         },
         {
@@ -92,8 +92,8 @@ const contents = {
             en: "Automatic Payroll",
           },
           description: {
-            id: "Hitung gaji, tunjangan, dan potongan dengan mudah. Terintegrasi dengan berbagai metode pembayaran untuk proses payroll yang lebih cepat dan akurat.",
-            en: "Easily calculate salaries, benefits, and deductions. Integrated with various payment methods for faster and more accurate payroll processing.",
+            id: "Hitung gaji, tunjangan, dan potongan dengan akurat serta terintegrasi dengan berbagai metode pembayaran.",
+            en: "Calculate salaries, allowances, and deductions accurately and integrate with various payment methods.",
           },
         },
         {
@@ -104,20 +104,20 @@ const contents = {
             en: "Leave & Overtime Management",
           },
           description: {
-            id: "Ajukan dan setujui cuti serta lembur dengan sistem otomatis yang memastikan transparansi dan efisiensi.",
-            en: "Apply for and approve leave and overtime with an automated system ensuring transparency and efficiency.",
+            id: "Proses pengajuan dan persetujuan cuti serta lembur lebih cepat dengan sistem yang transparan.",
+            en: "The process of submitting and approving leave and overtime is faster with a transparent system.",
           },
         },
         {
           img: `${IMAGES_PATH}/features/penilaian.png`,
           icon: IconReport,
           label: {
-            id: "Evaluasi Kinerja",
-            en: "Performance Evaluation",
+            id: "Evaluasi Kinerja Karyawan",
+            en: "Employee Performance Evaluation",
           },
           description: {
-            id: "Tentukan KPI, pantau pencapaian karyawan, dan berikan feedback untuk meningkatkan produktivitas tim Anda.",
-            en: "Set KPIs, monitor employee achievements, and provide feedback to improve team productivity.",
+            id: "Tentukan KPI, pantau pencapaian, dan berikan feedback berbasis data untuk meningkatkan produktivitas.",
+            en: "Define KPIs, monitor achievements, and provide data-based feedback to improve productivity.",
           },
         },
         {
@@ -128,20 +128,20 @@ const contents = {
             en: "Centralized Employee Database",
           },
           description: {
-            id: "Simpan dan kelola data karyawan dalam satu tempat yang aman dan mudah diakses kapan saja.",
-            en: "Store and manage employee data in a secure and easily accessible centralized location.",
+            id: "Simpan dan kelola semua data karyawan dalam satu sistem yang aman dan mudah diakses.",
+            en: "Store and manage all employee data in one secure and easily accessible system.",
           },
         },
         {
           img: `${IMAGES_PATH}/features/dashboard.png`,
           icon: IconChartLine,
           label: {
-            id: "Laporan & Analitik",
+            id: "Laporan & Analitik SDM",
             en: "Reports & Analytics",
           },
           description: {
-            id: "Dapatkan laporan dan analisis mendalam tentang kehadiran, performa, serta produktivitas karyawan dalam satu dashboard interaktif.",
-            en: "Gain in-depth reports and analysis on attendance, performance, and employee productivity in one interactive dashboard.",
+            id: "Dapatkan laporan lengkap dan analisis mendalam terkait kehadiran, performa, serta produktivitas karyawan.",
+            en: "Get comprehensive reports and in-depth analysis on employee attendance, performance, and productivity.",
           },
         },
       ],

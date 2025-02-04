@@ -21,14 +21,14 @@ const Hero = () => {
     // maxH={["", null, null, "720px"]}
     >
       <Container>
-        <HStack wrap={"wrap"} py={20}>
+        <HStack wrap={"wrap"} py={20} gap={12} align={"end"}>
           <CContainer flex={"1 1 500px"}>
             <HStack mb={4} gap={4}>
               <Logo h={"16px"} />
               <Heading5 fontWeight={"semibold"}>HRMS by {BRAND_NAME}</Heading5>
             </HStack>
 
-            <Heading1 fontWeight={"bold"} mb={8}>
+            <Heading1 fontWeight={"bold"} lineHeight={"shorter"}>
               {content.title[lang]}
             </Heading1>
           </CContainer>
