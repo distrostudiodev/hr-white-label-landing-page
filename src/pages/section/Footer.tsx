@@ -1,11 +1,12 @@
-import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading1 from "@/components/ui-custom/Heading1";
 import LangSwitcher from "@/components/ui-custom/LangSwitcher";
 import { ColorModeButton } from "@/components/ui/color-mode";
+import CtaButton from "@/components/widget/CtaButton";
 import contents from "@/constant/contents";
-import { ASSETS_PATH, SVGS_PATH } from "@/constant/path";
+import { ASSETS_PATH, IMAGES_PATH } from "@/constant/path";
 import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
 import { HStack, Icon, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { ArrowUpRight } from "@phosphor-icons/react";
@@ -14,6 +15,7 @@ import Container from "../../components/ui-custom/Container";
 
 const Footer = () => {
   const { lang } = useLang();
+  const iss = useIsSmScreenWidth();
 
   return (
     <CContainer>
@@ -21,47 +23,40 @@ const Footer = () => {
         <CContainer
           bg={"p.500"}
           color={"light"}
-          py={16}
           position={"relative"}
           overflow={"clip"}
           borderRadius={20}
         >
-          <Container position={"relative"}>
-            <HStack wrap={"wrap"} gap={responsiveSpacing3}>
-              <CContainer flex={"1 1 400px"} gap={5}>
-                <Text fontSize={"2rem"} fontWeight={"semibold"}>
-                  {contents.footer.cta.title[lang]}
-                </Text>
+          <HStack gap={responsiveSpacing3} align={"stretch"}>
+            <CContainer flex={"1 1 400px"} gap={5} p={responsiveSpacing3}>
+              <Text fontSize={"2rem"} fontWeight={"semibold"}>
+                {contents.footer.cta.title[lang]}
+              </Text>
 
-                <Text>{contents.footer.cta.desc[lang]}</Text>
+              <Text>{contents.footer.cta.desc[lang]}</Text>
 
-                <BButton
-                  w={"fit"}
-                  variant={"plain"}
-                  color={"light"}
-                  px={0}
-                  fontSize={"1rem !important"}
-                  textDecor={"underline"}
-                >
-                  {contents.footer.cta.buttonLabel[lang]}
-                  <Icon fontSize={"lg"}>
-                    <ArrowUpRight />
-                  </Icon>
-                </BButton>
-              </CContainer>
+              <CtaButton
+                size={"xl"}
+                fontSize={"1.15rem !important"}
+                bg={"white"}
+                color={"p.500"}
+                mt={4}
+              />
+            </CContainer>
 
-              <CContainer flex={"1 1 150px"} mt={"auto"} position={"relative"}>
+            {!iss && (
+              <CContainer flex={"1 1 150px"} position={"relative"}>
                 <Image
-                  src={`${SVGS_PATH}/ubur_light.svg`}
-                  opacity={0.2}
+                  src={`${IMAGES_PATH}/footer.webp`}
                   position={"absolute"}
-                  bottom={-16}
-                  right={-16}
-                  w={"100%"}
+                  bottom={0}
+                  right={0}
+                  objectPosition={"left"}
+                  h={"100%"}
                 />
               </CContainer>
-            </HStack>
-          </Container>
+            )}
+          </HStack>
         </CContainer>
       </Container>
 
