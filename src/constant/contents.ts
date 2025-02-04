@@ -364,12 +364,12 @@ const contents = {
   footer: {
     cta: {
       title: {
-        id: "Butuh Bantuan atau Ingin Konsultasi Lebih Lanjut?",
-        en: "Need Help or Want Further Consultation?",
+        id: "Coba HRMS Sekarang – Solusi HRD Terbaik untuk Bisnis Anda!",
+        en: "Try HRMS Now – The Best HR Solution for Your Business!",
       },
       desc: {
-        id: "Klik 'Hubungi Kami di WhatsApp' untuk berbicara langsung dengan tim kami yang siap memberikan solusi dan menjawab segala pertanyaan Anda dengan cepat.",
-        en: "Click 'Contact Us on WhatsApp' to chat directly with our team, ready to provide solutions and answer all your questions quickly.",
+        id: "Tingkatkan efisiensi manajemen SDM dengan HRMS, solusi HRD yang dirancang untuk kemudahan dan produktivitas. Daftar sekarang dan nikmati uji coba gratis",
+        en: "Improve HR management efficiency with HRMS, an HRD solution designed for ease and productivity. Sign up now and enjoy a free trial",
       },
       buttonLabel: {
         id: "Hubungi Kami di WhatsApp",

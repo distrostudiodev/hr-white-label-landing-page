@@ -16,6 +16,7 @@ const CtaButton = ({ ...props }: Props) => {
     <BButton
       colorPalette={PRIMARY_COLOR_PALETTE}
       onClick={ctaOnOpen}
+      fontWeight={"semibold"}
       {...props}
     >
       {contents.home.hero.cta[lang]}
