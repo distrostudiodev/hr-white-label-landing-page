@@ -61,7 +61,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           py={2}
           w={"100%"}
           h={scrollTop ? "80px" : "60px"}
-          transition={"200ms"}
+          transition={"300ms"}
         >
           <HStack flexShrink={0} w={"100px"}>
             {/* <NavDrawer
